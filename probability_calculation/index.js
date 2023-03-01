@@ -189,18 +189,3 @@ function checking()
     }
 }
 console.log("api should be added")
-
-const settings = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://quotient.p.rapidapi.com/equity/live?symbol=TSLA&timezone=UTC",
-	"method": "GET",
-	"headers": {
-		"X-RapidAPI-Key": "a605d354a4msh906c743e3a9eff5p1254c3jsnb4e62139467b",
-		"X-RapidAPI-Host": "quotient.p.rapidapi.com"
-	}
-};
-
-$.ajax(settings).done(function (response) {
-	console.log(response);
-});
